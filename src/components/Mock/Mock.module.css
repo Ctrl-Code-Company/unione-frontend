@@ -1,0 +1,18 @@
+.backgrounduniversity{
+    background-image: linear-gradient(rgba(6, 48, 83, 0.7), rgba(6, 48, 83, 0.7)), url(./../../assets/png/mock.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 240px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+  @media(max-width:450px){
+    .backgrounduniversity{
+      height: 180px;
+    }
+  }

@@ -1,0 +1,193 @@
+/* .mainPage{
+    background: linear-gradient(to bottom, #DBE5F4, #2767C8);
+}
+
+@media(max-width: 450px){
+    .mainPage{
+        background: white;
+    }
+} */
+
+.showcase{
+    background-image: url(./../../assets/png/showcase121.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+.showcase .container{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.showcase .container .title h1{
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+.showcase .container .information{
+    margin: 140px 0 20px;
+}
+.showcase .container .information .dream{
+    margin: 0 auto;
+    width: 70%;
+    padding: 10px;
+    background-color: #1E2640;
+    border-radius: 10px;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.showcase .container .information .info_table{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+.showcase .container .information .info_table .map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
+    padding: 15px 50px;
+    border-right: 1px solid gray;
+    color: #2C3A61;
+}
+.showcase .container .information .info_table .map:nth-child(4){
+    border-right: 1px solid white;
+}
+@media(max-width: 1030px){
+    .showcase .container .title h1{
+        font-size: 70px;
+        margin: 0 10px;
+    }
+    .showcase .container .information .dream{
+        padding: 10px;
+        background-color: #1E2640;
+        font-size: 24px;
+    }
+    .showcase .container .information .info_table{
+        justify-content: center;
+        padding: 20px 10px;
+        border-radius: 20px;
+        margin: 0 10px;
+    }
+    .showcase .container .information .info_table .map{
+        font-size: 18px;
+        padding: 15px 35px;
+    }
+}
+@media(max-width: 650px){
+    .showcase .container .title h1{
+        font-size: 45px;
+        text-align: center;
+    }
+    .showcase .container .information .dream{
+        font-size: 18px;
+    }
+    .showcase .container .information .info_table{
+        padding: 20px 10px;
+        margin: 0 10px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+    .showcase .container .information .info_table .map{
+        font-size: 18px;
+        padding: 15px 25px;
+        border-right: 1px solid white;
+    }
+    .showcase .container .information .info_table .map{
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+}
+@media(max-width:450px){
+    .showcase{
+        background: linear-gradient(#516e87, url(./../../assets/png/mobile-showcase-background.png));
+    }
+    .showcase .container .title h1{
+        font-size: 35px;
+        padding-top: 150px;
+    }
+
+}
+
+@media(max-width: 1240px){
+    .showcase{
+        padding: 20px 0 0 0;
+    }
+}
+@media(max-width: 1000px){
+    .showcase{
+        padding: 0;
+    }
+    .showcase .container .text h1{
+        font-size: 50px;
+    }
+    .showcase .container .text strong{
+        font-size: 60px;
+    }   
+    .showcase .container .text {
+        width: 60%;
+        padding-bottom: 50px;
+    }
+    .showcase .container .text p{
+        padding: 40px 0 50px 0;
+        line-height: 1.1;
+        font-size: 23px;
+        width: 100%;
+    }
+}
+@media(max-width: 768px){
+    .showcase .container .co_container{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .showcase .container .text{
+        width: 100%;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .showcase .container .images{
+        width: 100%;
+        display: none;
+    }
+    .showcase .container .text p{
+        width: 100%;
+    }
+}
+@media(max-width: 500px){
+    .showcase{
+        height: 100%;
+    }
+}
+@media(max-width: 400px){
+    .showcase .container{
+        padding: 20px 5px;
+    }
+    .showcase .container .text h1{
+        font-size: 25px;
+    }
+    .showcase .container .text p{
+        font-size: 10px;
+    }
+    .showcase .container .text strong{
+        font-size: 30px;
+    }
+    .showcase .container .text button {
+        width: 155px;
+        height: 20px;
+        font-size: 9px;
+    }
+}

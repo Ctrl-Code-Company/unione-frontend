@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:wght@100..900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "League Spartan", sans-serif; */
+/* font-family: "Inter", sans-serif; */
+/* font-family: "Comfortaa", sans-serif; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    position: relative;
+    background: #f0f1f7;
+  }
+a{
+    color: inherit;
+}
+
+

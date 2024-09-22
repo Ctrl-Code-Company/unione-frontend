@@ -1,0 +1,31 @@
+.aut .main_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    gap: 50px;
+    text-align: center;
+}
+.aut .main_box .card{
+    width: 332px;
+    height: 201px;
+    display: flex;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(#00000078,#00000078), url(./../../../assets/png/autlogo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 5px gray;
+    border-radius: 9px;
+    cursor: pointer;
+    position: relative;
+    color: white;
+}
+.aut .main_box .card:hover{
+    transition: .5s;
+    box-shadow: 0 0 20px gray;
+}

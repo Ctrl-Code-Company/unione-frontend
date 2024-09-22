@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+.main_box{
+    font-family: 'League Spartan', sans-serif;
+    background-color: #ECECEC;
+    padding-bottom: 40px;
+  }
+  .main_box .questions{
+    margin: 0 auto;
+    box-shadow: 0 0 10px gray;
+    background-color: white;
+    padding: 20px 0;
+  }
+  .main_box .container{
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4A5D8C;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;
+  }
+  
+  .scrollToTopBtn:hover {
+    background-color: #3A4D6C;
+  }
+  
+  .main_box .container .container2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #1E4B85;
+}
+.main_box .container .time{
+  font-size: 35px;  
+}
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+    .modalContent2{
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+    border: 1px solid #888;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .modalContent2 button{
+    background-color: #fff;
+    color: #4A5D8C;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #4A5D8C;
+    cursor: pointer;
+}
+  .modalContent2 button:hover{
+    background-color: #4A5D8C;
+        color: white;
+        transition: .5s;
+}
+.modal .modalContent2 p{
+    line-height: 30px;
+    font-size: 20px;
+    color: #343434;
+}
+    .modal .modalContent{
+      padding: 20px 0 0 0;
+      background-color: #fefefe;
+      margin: 10% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 40%;
+    }
+    .modal .modalContent p{
+        line-height: 30px;
+        font-size: 20px;
+        color: #343434;
+        text-align: center;
+    }
+    .modal .modalContent .actions{
+        display: flex;
+        gap: 10px;
+        padding-top: 20px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .katex-display, .katex {
+      font-family: 'Arial', sans-serif !important; /* Override font family */
+      color: black !important; /* Ensure text is black */
+    }
+    .mathQuestion .katex {
+      color: black !important; /* Ensuring color is explicitly set */
+    }
+    .mathQuestion .katex {
+      font-family: 'Arial', sans-serif;
+      color: black !important;
+    }
+    .modal .modalContent button{
+        padding: 5px 10px;
+        cursor: pointer;
+        color: #4A5D8C;
+        border-radius: 10px;
+        border: 1px solid #4A5D8C;
+        background-color: white;
+    }
+    .modal .modalContent button:hover{
+        background-color: #4A5D8C;
+        color: white;
+        transition: .5s;
+    }
+
+    .mathQuestion{
+      font-size: 20px;
+      line-height: 30px;
+    }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .startBtn{
+    padding: 10px 50px;
+    background-color: #629CE5;
+    border: 1px solid #629CE5;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  .startBtn:nth-child(2){
+    background-color: #1E4B85;
+    border: 1px solid #1E4B85;
+  }
+  .quiz{
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 50px 30px;
+    border-radius: 20px;
+    background-color: white;
+  }
+  .testTitle{
+    margin: 55px 10px 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    gap: 50px;
+    width: 890px;
+    height: 80px;
+    padding: 0 5px;
+    color: #1E4B85;
+    background-color: #fff;
+    font-size: 30px;
+  }
+  .testTitleContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .variant{
+    font-size: 20px;
+    font-family: 'League Spartan', sans-serif;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .selectedRadioButton {
+    background-color: #629CE5;
+    color: white !important;
+  }
+  .answer{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+  }
+  .percent{
+    font-size: 25px;
+    font-weight: bold;
+    color: #4A5D8C;
+  }
+  @media(max-width: 700px){
+    .startBtn{
+    padding: 10px 30px;
+      font-size: 10px;
+    }
+    .main_box .container .time{
+      font-size: 15px; 
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+    }
+    .main_box .container .time .iconTimer{
+      font-size: 15px;
+    }
+
+  }
+  @media(max-width: 600px){
+    .modalContent2{
+        margin: 10% auto;
+        width: 70%;
+      }
+    .modal .modalContent{
+        margin: 15% auto;
+        width: 70%;
+      }
+  }
+  @media(max-width: 500px){
+    
+    .quiz{
+      margin: 30px 10px;
+    }
+    .variant{
+      font-size: 15px; 
+      line-height: 20px;
+    }
+    .mathQuestion{
+      font-size: 15px;
+      line-height: 20px;
+    }
+    .testTitle{
+      font-size: 18px;
+    }
+    .main_box .container .container2{
+      gap: 10px;
+    }
+    .startBtn{
+      margin: 5px;
+      padding: 7px 20px;
+    }
+    .modalContent2{
+      gap: 10px;
+    }
+    .modal .modalContent2 p{
+      line-height: 21px;
+      font-size: 14px;
+      color: #343434;
+  }
+      .percent{
+        font-size: 14px;
+      }
+    .modal .modalContent p{
+        font-size: 16px;
+      }
+  }

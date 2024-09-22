@@ -1,0 +1,143 @@
+  header{
+    background-color: #f4f4f4;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.383);
+    font-family: "Comfortaa", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  .navbar{
+    max-width: 1400px;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+  } 
+  .nav-list li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #121212;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .nav-list li a:hover{
+    border-bottom: 2px solid #121212;
+    transition: .2s;
+}
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .user .user_info {
+    cursor: pointer;
+  }
+  .sign-in-button{
+    font-size: 20px;
+    padding: 5px 25px;
+    border-radius: 10px;
+    border: 1px solid #0A4577;
+    font-weight: 500;
+  }
+  .coin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    color: #121212;
+  }
+  .toggle_icon {
+    display: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .user_list{
+    display: none;
+  }
+  @media(max-width: 940px){
+    .nav-list li a {
+      font-size: 18px;
+    }
+    .coin{
+      font-size: 18px;
+    }
+    .sign-in-button{
+      font-size: 18px;
+      padding: 5px 22px;
+    }
+  }
+  @media (max-width: 850px) {
+    .navbar{
+      margin: 0 20px;
+    }
+    .nav-list {
+      flex-direction: column;
+      position: absolute;
+      padding: 10px 0;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: #f4f4f4;
+      opacity: 1;
+      visibility: hidden;
+    }
+  .user_list{
+    display: block;
+  }
+    .nav-list.expanded {
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    .nav-list li {
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    .toggle_icon {
+      display: block;
+      color: #1E4B85;
+    }
+    .user .user_info {
+      display: none;
+    }
+  }
+  @media(max-width: 550px){
+    .navbar{
+      padding: 0;
+    }
+    .logo{
+      transform: scale(0.8);
+    }
+    .coin_img{
+      transform: scale(0.8);
+    }
+    .coin_paragraph{
+      text-align: center;
+    }
+    .coin{
+      font-size: 16px;
+      gap: 4px;
+    }
+    .nav-list li a {
+      font-size: 16px;
+    }
+    .sign-in-button{
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+  }
+  

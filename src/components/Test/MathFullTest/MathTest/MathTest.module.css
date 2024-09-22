@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+    /* background-color: red; */
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 10px 50px 0;
+}
+.container .main_box{
+    width: 800px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px gray;
+    height: 500px;
+    background-color: white;
+    padding: 57px 40px;
+    font-family: 'League Spartan', sans-serif;
+}
+.container .main_box h1{
+    color: #4A5D8C;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.container .main_box h3{
+    padding-top: 40px;
+    color: #4A5D8C;
+    font-size: 20px;
+}
+.container .main_box ul{
+    padding: 30px 0 80px 0;
+    list-style: circle;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.container .main_box ul li{
+    margin-left: 15px;
+    font-size: 20px;
+    list-style: circle;
+    font-weight: 500;
+}
+.container .main_box p{
+    text-align: center;
+    font-size: 15px;
+}
+.container .main_box .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.container .main_box button{
+    padding: 10px 20px;
+    color: white;
+    font-size: 22px;
+    background-color: #4A5D8C;
+    border: 1px solid #4A5D8C;
+    border-radius: 50px;
+    text-align: center;
+}
+@media(max-width: 450px){
+    .container .main_box{
+        padding: 57px 30px;
+    }
+    .container .main_box ul li{
+        font-size: 16px;
+    }
+    .container .main_box .btn button{
+        padding: 7px 15px;
+        font-size: 18px;
+    }
+}

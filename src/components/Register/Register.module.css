@@ -1,0 +1,221 @@
+
+.main_register{
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(219, 229, 244, 0.37),rgba(219, 229, 244, 0.37), #154F99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.errorText {
+    color: red;
+  }
+  
+.main_register .container{
+    margin: 0 auto;
+    width: 1017px;
+    background: linear-gradient(to bottom, #154F99,#FFFFFF, #FFFFFF);
+    border-radius: 24px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ .main_register .mobile_version{
+    display: none;
+ }
+ .main_register .container .container_heading{
+    font-size: 55px;
+    color: white;
+    text-align: center;
+ }
+ .main_register .container .logo_image{
+    width: 128px;
+    height: 84px;
+ }
+ .main_register .container .select{
+    border: none;
+    margin: 10px 0;
+ }
+ .main_register .container .form_register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 20px;
+ }
+ .main_register .modalButton{
+    padding: 7px 30px;
+    border-radius: 10px;
+    background-color: #1E4B85;
+    border: 1px solid #1E4B85;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+.errorPlaceholder::placeholder {
+    color: red;
+  }
+.main_register .modalTitle{
+    font-weight: 500;
+    font-size: 30px;
+}
+.main_register .container .form_register .email_input{
+    width: 465px;
+}
+.main_register .container .form_register .name_form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+ .main_register .container .form_register .password_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+ }
+ .main_register .container .form_register input{
+    /* width: 222px; */
+    border-radius: 12px;
+    border: 1px solid;
+    padding: 10px 20px;
+ }
+ .main_register .container .showPassword{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+ }
+ .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+ }
+ .buttonNext{
+    font-size: 22px;
+    padding: 10px 60px;
+    background: gray;
+    border-radius: 32px;
+    color: white;
+ }
+ .finish_button{
+    font-size: 22px;
+    padding: 10px 60px;
+    background: gray;
+    border-radius: 32px;
+    color: white;
+}
+@media(max-width: 1000px){
+    .main_register .container{
+        margin: 0 20px;
+    }
+}
+@media(max-width:650px){
+    .main_register{
+        height: 100%;
+    }
+    .main_register .container .container_heading{
+        font-size: 40px;
+    }
+    .main_register .container .form_register{
+        margin: 0 10px;
+        gap: 5px;  
+    }
+    .main_register .container .form_register .name_form{
+        flex-direction: column;
+        gap: 5px;
+        padding: 0px;
+    }
+    .main_register .container .form_register .password_form{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .main_register .container .form_register h2{
+        font-size: 14px;
+    }
+    .main_register .container .paragraph{
+        font-size: 12px;
+        text-align: center;
+    }
+    .main_register .container .form_register .name_form .name_form_input{
+        width: 465px;
+    }
+    .main_register .container .form_register .password_form .password_form_input{
+        width: 465px;
+    }
+    .main_register .container .buttonNext{
+        font-size: 16px;
+        padding: 5px 40px;
+    }
+    .main_register .container .finish_button{
+        font-size: 16px;
+        padding: 5px 40px;
+    }
+}
+@media(max-width:500px){
+    .main_register .container .form_register .name_form .name_form_input{
+        width: 350px;
+    }
+    .main_register .container .form_register .password_form .password_form_input{
+        width: 350px;
+    }
+    .main_register .container .form_register .email_input{
+        width: 350px;
+    }
+    .main_register .container .container_heading{
+        font-size: 25px;
+    }
+}
+@media(max-width:450px){
+    .main_register{
+        padding: 10px;
+        flex-direction: column;
+        gap: 30px;  
+    }
+    .main_register .container{
+        background: white;
+        box-shadow: 0 0 10px gray;
+        width: 100%;
+    }
+    .main_register .container .logo_image{
+        display: none;
+    }
+    .main_register .container .container_heading{
+        display: none;
+    }
+    .main_register .container .form_register .name_form .name_form_input{
+        width: 250px;
+    }
+    .main_register .container .form_register .password_form .password_form_input{
+        width: 250px;
+    }
+    .main_register .container .form_register .email_input{
+        width: 250px;
+    }
+    .main_register .mobile_version .mobile_heading{
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        color: #2D6BCA;
+    }
+    .main_register .mobile_version{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+    }
+    .main_register .container .paragraph{
+        padding: 0 10px;
+    }
+    .main_register .button{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}

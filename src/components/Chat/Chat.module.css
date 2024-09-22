@@ -1,0 +1,146 @@
+/* body {
+  position: relative;
+} */
+.inputs {
+  position: fixed;
+  right: 1%;
+  bottom: 11%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #eaedf4;
+  border-radius: 20px;
+  padding: 0px;
+  color: black;
+  width: 340px;
+  height: 441px;
+  z-index: 20;
+}
+.qwe {
+  background-color: #1E4B85;
+  padding: 10px;
+  color: white;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  z-index: 20;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+}
+.timestamp{
+text-align: right;
+font-size: 15px;
+}
+.qwe img{
+  width: 100%;
+  height: 100%;
+}
+.res {
+  color: white;
+}
+.input {
+border-radius: 20px;
+border: 1px solid black;
+padding: 10px 10px;
+}
+.main {
+  position: relative;
+}  
+.chat {
+  background-color: #1E4B85;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.message {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 70%;
+  margin-left: 10px;
+  background-color: #4086E0;
+  color: white;
+  order: 2;
+}
+.backendResponse {
+  margin-left: 10px;
+  background-color: #e2d7d7b4;
+  color: black;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 70%;
+}
+
+.inputArea {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 7px;
+  gap: 5px;
+  background-color: #fff;
+}
+
+.inputArea .input{
+  border-radius: 0;
+  width: 100%;
+  border: none;
+}
+.send {
+border: 1px solid white;
+cursor: pointer;
+padding: 7px 12px;
+background-color: #1E4B85;
+border-radius: 10px;
+color: white;
+}
+.messagesContainer {
+display: flex;
+flex-direction: column;
+width: 100%;
+height: auto;
+overflow: auto;
+margin-bottom: 10px;
+}
+.avatar {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+margin-right: 10px
+}
+
+.userMessageContainer {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+gap: 2px;
+}
+.userMessageContainer img{
+order: 2;
+}
+
+.backendMessageContainer {
+display: flex;
+justify-content: flex-start;
+align-items: flex-end;
+gap: 2px;
+}
+.timestamp{
+font-size: 12px;
+color: rgba(0, 0, 0, 0.512);
+padding: 5px 0 0 0;
+}
+@media(max-width: 450px){
+.inputs{
+  width: 250px;
+}
+.qwe{
+  padding: 5px;
+  height: 60px;
+  width: 60px;
+}
+}
